@@ -1,4 +1,4 @@
-const CACHES = "openai-api-cache";
+const CACHES = "one-api-cache";
 
 self.addEventListener("activate", function (event) {
   console.log("ServiceWorker activated.");
