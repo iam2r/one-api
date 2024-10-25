@@ -76,9 +76,11 @@ const HeaderBar = () => {
     if (!model) {
       body.removeAttribute('theme-mode');
       localStorage.setItem('theme-mode', 'light');
+      window.PwaTools.triggerThemeUpdate('light');
     } else {
       body.setAttribute('theme-mode', 'dark');
       localStorage.setItem('theme-mode', 'dark');
+      window.PwaTools.triggerThemeUpdate('dark');
     }
     setDark(model);
   };
