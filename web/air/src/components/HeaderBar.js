@@ -63,9 +63,7 @@ const HeaderBar = () => {
   };
 
   useEffect(() => {
-    if (themeMode === 'dark') {
-      switchMode(true);
-    }
+    switchMode(themeMode === 'dark');
     if (isNewYear) {
       console.log('Happy New Year!');
     }
